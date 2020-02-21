@@ -1,5 +1,3 @@
-import { CollectionsModule } from "./collections/collections.module";
-import { ElmentsModule } from "./elments/elments.module";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
@@ -10,7 +8,7 @@ import { NotFoundComponent } from "./not-found/not-found.component";
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NotFoundComponent],
-  imports: [BrowserModule, ElmentsModule, CollectionsModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })

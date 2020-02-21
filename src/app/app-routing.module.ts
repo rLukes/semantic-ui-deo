@@ -4,6 +4,15 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
 const routes: Routes = [
+  {
+    path: "elements",
+    loadChildren: () =>
+      import("./elments/elments.module").then(m => m.ElmentsModule)
+  },
+  {
+    path: "collection",
+    loadChildren: "./collections/collections.module#CollectionsModule"
+  },
   { path: "", component: HomeComponent },
   { path: "**", component: NotFoundComponent }
 ];
