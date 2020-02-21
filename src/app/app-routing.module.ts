@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: "elements",
     loadChildren: () =>
-      import("./elments/elments.module").then(m => m.ElmentsModule)
+      import("./elements/elements.module").then(m => m.ElementsModule)
   },
   {
     path: "collection",
